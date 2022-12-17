@@ -1,0 +1,80 @@
+/*The header Styling*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 1000px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+}
+header.sticky{
+    height: 80px;
+}
+header .banner
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .logo
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 15vw;
+    color: #fff;
+    font-weight: 700;
+    transition: 1s;
+    text-decoration: none;
+    z-index: 1;
+}
+header.sticky .logo{
+    position: absolute;
+    font-size: 2em;
+    left: 100px;
+    transform:translate(0,-50%);
+
+} 
+nav{
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+nav ul{
+    position: relative;
+    display: flex; 
+    transition: 0.25s;
+}
+nav ul li{
+   list-style: none; 
+}
+nav ul li a{
+    color:#fff;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: palevioletred;
+    transition: 1s;
+}
